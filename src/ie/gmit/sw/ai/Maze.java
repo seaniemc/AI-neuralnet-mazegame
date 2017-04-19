@@ -1,9 +1,10 @@
 package ie.gmit.sw.ai;
 
 import ie.gmit.sw.ai.maze.Node;
+import ie.gmit.sw.ai.maze.Spider;
 
 public class Maze {
-	
+	private Object lock = new Object();
 	private Node[][] maze;
 	
 	public Maze(int dimension){
@@ -45,6 +46,8 @@ public class Maze {
 			
 			if (maze[row][col].getId() == replace){
 				
+				if(feature > 5)
+					maze[row][col] = new Spider(row, col, feature, lock, maze);
 				//create spider nodes in here
 				maze[row][col].setId(feature);
 				counter++;
