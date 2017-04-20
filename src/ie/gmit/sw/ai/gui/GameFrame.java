@@ -344,7 +344,7 @@ public class GameFrame implements KeyListener {
 				return true;
 			case 'E':
 				BattleLogic fuzzyBattle1 = new BattleLogic();
-				boolean enemyWon1 = fuzzyBattle1.startBattle(game.getPlayer(), game.getEnemies().get(game.getMaze()[r][c].getEnemyID()), "fcl/battle.fcl");
+				boolean enemyWon1 = fuzzyBattle1.startBattle(game.getPlayer(), game.getEnemies().get(game.getMaze()[r][c].getEnemyID()), "fcl/fuzzyFight.fcl");
 				if (enemyWon1 == true) {
 					// The player has lost the game!
 					game.getMaze()[game.getPlayer().getRowPos()][game.getPlayer().getColPos()].setNodeType(' ');
@@ -362,7 +362,7 @@ public class GameFrame implements KeyListener {
 				}
 			case 'F':
 				BattleLogic fuzzyBattle2 = new BattleLogic();
-				boolean enemyWon2 = fuzzyBattle2.startBattle(game.getPlayer(), game.getEnemies().get(game.getMaze()[r][c].getEnemyID()), "fcl/battle.fcl");
+				boolean enemyWon2 = fuzzyBattle2.startBattle(game.getPlayer(), game.getEnemies().get(game.getMaze()[r][c].getEnemyID()), "fcl/fuzzyFight.fcl");
 				if (enemyWon2 == true) {
 					// The player has lost the game!
 					game.getMaze()[game.getPlayer().getRowPos()][game.getPlayer().getColPos()].setNodeType(' ');

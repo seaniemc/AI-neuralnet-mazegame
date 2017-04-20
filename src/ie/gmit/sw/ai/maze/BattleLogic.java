@@ -19,21 +19,21 @@ public class BattleLogic {
             return true;
         }
 
-        FunctionBlock functionBlock = fis.getFunctionBlock("battle");
+        FunctionBlock functionBlock = fis.getFunctionBlock("fight");
 
         fis.setVariable("health", player.getHealth());
         fis.setVariable("armor", player.getArmor());
         fis.setVariable("weapon", player.getWeaponStrength());
         fis.evaluate();
 
-        Variable survivability = functionBlock.getVariable("survivability");
-        System.out.println("Survivability Percentage: " + (int)survivability.getValue() + "%\n");
+        Variable annihilation = functionBlock.getVariable("annihilation");
+        System.out.println("Annihilation Percentage: " + (int)annihilation.getValue() + "%\n");
 
         boolean enemyWon = false;
 
-        player.setHealth((int)(player.getHealth() - (100 - survivability.getValue())));
-        player.setArmor((int)(player.getArmor() - (100 - survivability.getValue() + 10)));
-        player.setWeaponStrength((int)(player.getWeaponStrength() * (survivability.getValue() / 100)));
+        player.setHealth((int)(player.getHealth() - (100 - annihilation.getValue())));
+        player.setArmor((int)(player.getArmor() - (100 - annihilation.getValue() + 10)));
+        player.setWeaponStrength((int)(player.getWeaponStrength() * (annihilation.getValue() / 100)));
 
         // If the weapon was damaged enough then destroy the weapon
         if(player.getWeaponStrength() < 35){

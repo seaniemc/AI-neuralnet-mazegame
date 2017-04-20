@@ -2,7 +2,7 @@ package ie.gmit.sw.ai.maze;
 
 import ie.gmit.sw.ai.searchAlgos.AStarTraversator;
 import ie.gmit.sw.ai.searchAlgos.Node;
-import ie.gmit.sw.ai.maze.Warrior;
+
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Random;
@@ -97,7 +97,7 @@ public class Spider extends Sprite implements Runnable {
             case 'P':
                 // Starting a battle with the player using the fuzzy logic library
                 BattleLogic fuzzyBattle = new BattleLogic();
-                boolean enemyWon = fuzzyBattle.startBattle(getPlayer(), this, "fcl/battle.fcl");
+                boolean enemyWon = fuzzyBattle.startBattle(getPlayer(), this, "fcl/fuzzyFight.fcl");
                 if(enemyWon == true){
                     // The player has lost the game!
                     getMaze()[getRowPos()][getColPos()].setNodeType(' ');
