@@ -2,12 +2,7 @@ package ie.gmit.sw.ai.searchAlgos;
 
 import java.util.*;
 
-/**  
-* BeamTraversator.java - The beam search algorithm class, used for traversing the maze to locate the goal node
-* @author John Walsh
-* @version 1.0 
-* @see Traversator
-*/
+
 public class BeamTraversator extends Utility implements Traversator {
 	
 	private Node goal;

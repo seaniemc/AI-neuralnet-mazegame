@@ -96,7 +96,7 @@ public class Spider extends Sprite implements Runnable {
                 return true;
             case 'P':
                 // Starting a battle with the player using the fuzzy logic library
-                FuzzyBattle fuzzyBattle = new FuzzyBattle();
+                BattleLogic fuzzyBattle = new BattleLogic();
                 boolean enemyWon = fuzzyBattle.startBattle(getPlayer(), this, "fcl/battle.fcl");
                 if(enemyWon == true){
                     // The player has lost the game!
@@ -104,14 +104,14 @@ public class Spider extends Sprite implements Runnable {
                     getMaze()[getRowPos()][getColPos()].setEnemyID(0);
                     getPlayer().setGameOver(true);
                     getMaze()[r][c].setNodeType('L');
-                    PlaySound.play("res/lose_game.wav");
+                    //PlaySound.play("res/lose_game.wav");
                 }else{
                     getMaze()[getRowPos()][getColPos()].setNodeType('D');
                     if(this.isBoss())
                         getMaze()[getRowPos()][getColPos()].setNodeType('L');
                     getMaze()[getRowPos()][getColPos()].setEnemyID(0);
                     this.setHealth(0);
-                    PlaySound.play("res/win_fight.wav");
+                    //PlaySound.play("res/win_fight.wav");
                 }
                 return enemyWon;
             case 'T':
@@ -327,11 +327,11 @@ public class Spider extends Sprite implements Runnable {
         this.maze = maze;
     }
 
-    public Player getPlayer() {
+    public Warrior getPlayer() {
         return player;
     }
 
-    public void setPlayer(Player player) {
+    public void setPlayer(Warrior player) {
         this.player = player;
     }
 

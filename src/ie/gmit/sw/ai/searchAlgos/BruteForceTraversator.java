@@ -2,12 +2,7 @@ package ie.gmit.sw.ai.searchAlgos;
 
 import java.util.*;
 
-/**  
-* BruteForceTraversator.java - The brute force algorithm class, used for traversing the maze to locate the goal node
-* @author John Walsh
-* @version 1.0 
-* @see Traversator
-*/
+
 public class BruteForceTraversator extends Utility implements Traversator {
 	
 	private boolean dfs = false;

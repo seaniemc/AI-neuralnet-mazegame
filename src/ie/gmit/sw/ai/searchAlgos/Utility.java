@@ -2,11 +2,7 @@ package ie.gmit.sw.ai.searchAlgos;
 
 import java.awt.Color;
 
-/**  
-* Utility.java - This abstract class contains shared features for the search algorithms to use
-* @author John Walsh
-* @version 1.0
-*/
+
 public abstract class Utility {
 	
 	/**

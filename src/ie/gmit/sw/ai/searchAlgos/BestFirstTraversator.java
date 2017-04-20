@@ -2,12 +2,7 @@ package ie.gmit.sw.ai.searchAlgos;
 
 import java.util.*;
 
-/**  
-* BestFirstTraversator.java - The bfs algorithm class, used for traversing the maze to locate the goal node
-* @author John Walsh
-* @version 1.0 
-* @see Traversator
-*/
+
 public class BestFirstTraversator extends Utility implements Traversator {
 	
 	private Node goal;
