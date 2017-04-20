@@ -1,5 +1,4 @@
 package ie.gmit.sw.ai.searchAlgos;
-import ie.gmit.sw.ai.maze.*;
 
 import java.util.*;
 public class AStarTraversator {

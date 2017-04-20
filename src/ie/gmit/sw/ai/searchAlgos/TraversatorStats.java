@@ -1,9 +1,9 @@
 package ie.gmit.sw.ai.searchAlgos;
 
 import java.awt.Color;
-import ie.gmit.sw.ai.maze.*;
+
 public class TraversatorStats {
-	public static void printStats(Node node, long time, int visitCount){
+	public static void printStats(Node node, long time, int visitCount, boolean countSteps){
 		double depth = 0;
 		
 		while (node != null){			

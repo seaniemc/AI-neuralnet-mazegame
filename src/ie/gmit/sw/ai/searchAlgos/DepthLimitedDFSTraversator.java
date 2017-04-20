@@ -1,6 +1,5 @@
 package ie.gmit.sw.ai.searchAlgos;
 
-import ie.gmit.sw.ai.maze.*;
 public class DepthLimitedDFSTraversator implements Traversator{
 	
 //	private Node[][] maze;

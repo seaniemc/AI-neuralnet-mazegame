@@ -1,7 +1,5 @@
 package ie.gmit.sw.ai.searchAlgos;
 
-import ie.gmit.sw.ai.maze.*;
-
 public class RandomWalk {
 	public void traverse(Node[][] maze, Node node) {
         long time = System.currentTimeMillis();

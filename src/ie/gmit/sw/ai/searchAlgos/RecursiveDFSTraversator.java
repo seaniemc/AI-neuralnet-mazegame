@@ -1,7 +1,5 @@
 package ie.gmit.sw.ai.searchAlgos;
 
-import ie.gmit.sw.ai.maze.*;
-
 public class RecursiveDFSTraversator {
 	private Node[][] maze;
 	private boolean keepRunning = true;

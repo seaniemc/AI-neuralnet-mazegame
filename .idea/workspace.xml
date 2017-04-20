@@ -2,17 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a7dfdb3-c225-4615-8d90-29595be7a26f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/ai/maze/NodeType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/BasicHillClimbingTraversator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/BeamTraversator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/BestFirstTraversator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/BruteForceTraversator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/Utility.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/ai/Maze.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/ai/Sprite.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/ai/maze/NodeType.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/ai/maze/Node.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/Node.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/ai/maze/Node.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/ai/maze/Node.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/ai/GameRunner.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/ai/GameRunner.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/ai/maze/Spider.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/ai/maze/Spider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/AStarTraversator.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/AStarTraversator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/DepthLimitedDFSTraversator.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/DepthLimitedDFSTraversator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/RandomWalk.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/RandomWalk.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/RecursiveDFSTraversator.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/RecursiveDFSTraversator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/Traversator.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/Traversator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/TraversatorStats.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/TraversatorStats.java" />
     </list>
     <ignored path="AI-neuralnet-mazegame.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,53 +39,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GameView.class" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bin/ie/gmit/sw/ai/GameView.class">
+      <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="139">
+              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Node.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/maze/Node.java">
+      <file leaf-file-name="BruteForceTraversator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/BruteForceTraversator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding>
-                <element signature="e#712#713#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="544">
+              <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Spider.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DepthLimitedDFSTraversator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/DepthLimitedDFSTraversator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="34" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Spider.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/maze/Spider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="44" column="27" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
+            <state relative-caret-position="5704">
+              <caret line="415" column="1" selection-start-line="415" selection-start-column="1" selection-end-line="415" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sprite.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/Sprite.java">
+      <file leaf-file-name="Utility.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/Utility.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="153">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Maze.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/Maze.java">
+      <file leaf-file-name="BasicHillClimbingTraversator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/BasicHillClimbingTraversator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-726">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="396">
+              <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -102,8 +112,8 @@
       <file leaf-file-name="TraversatorStats.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/TraversatorStats.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="85">
+              <caret line="5" column="90" selection-start-line="5" selection-start-column="90" selection-end-line="5" selection-end-column="90" />
               <folding />
             </state>
           </provider>
@@ -112,8 +122,8 @@
       <file leaf-file-name="Traversator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/Traversator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+            <state relative-caret-position="34">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -150,6 +160,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/ie/gmit/sw/ai/maze/Node.java" />
+        <option value="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/Node.java" />
+        <option value="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/TraversatorStats.java" />
         <option value="$PROJECT_DIR$/src/ie/gmit/sw/ai/maze/Spider.java" />
       </list>
     </option>
@@ -750,16 +762,16 @@
       <updated>1492597833019</updated>
       <workItem from="1492597836361" duration="493000" />
       <workItem from="1492598367466" duration="3112000" />
-      <workItem from="1492684522195" duration="1835000" />
+      <workItem from="1492684522195" duration="2635000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5440000" />
+    <option name="totallyTimeSpent" value="6240000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-1032" width="1296" height="1000" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -773,7 +785,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.225" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.225" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10451045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -826,13 +838,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/maze/Node.java">
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/Node.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="e#712#713#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -908,25 +918,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/maze/Spider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="44" column="27" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/Sprite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/Maze.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-726">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
@@ -948,22 +942,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/Traversator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/TraversatorStats.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/maze/NodeType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -972,13 +950,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/maze/Node.java">
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/DepthLimitedDFSTraversator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <element signature="e#712#713#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="34" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/Utility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/BruteForceTraversator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/Traversator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/TraversatorStats.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="90" selection-start-line="5" selection-start-column="90" selection-end-line="5" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/Maze.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-726">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/BasicHillClimbingTraversator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/maze/Spider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5704">
+          <caret line="415" column="1" selection-start-line="415" selection-start-column="1" selection-end-line="415" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
