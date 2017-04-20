@@ -5,15 +5,15 @@ import java.awt.Color;
 
 public class Node {
 	 private int id = -1;
-
+	 	NodeType nodeType;
 		public enum Direction {North, South, East, West};
 		private Node parent;
 		private Color color = Color.BLACK;
 		private Direction[] paths = null;
 		public boolean visited =  false;
 		public boolean goal;
-		private int row = -1;
-		private int col = -1;
+		protected int row = -1;
+		protected int col = -1;
 		private int distance;
 		
 		public Node(int row, int col, int id) {
@@ -29,7 +29,13 @@ public class Node {
 	    public void setId(int id) {
 	        this.id = id;
 	    }
+	    public NodeType getNodeType() {
+			return nodeType;
+		}
 
+		public void setNodeType(NodeType nodeType) {
+			this.nodeType = nodeType;
+		}
 	    public void setRow(int row) {
 			this.row = row;
 		}

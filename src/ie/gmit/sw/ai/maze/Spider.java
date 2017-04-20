@@ -1,5 +1,7 @@
 package ie.gmit.sw.ai.maze;
 
+import ie.gmit.sw.ai.searchAlgos.DepthLimitedDFSTraversator;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -17,6 +19,7 @@ public class Spider extends Node{
     private Node[][] maze = null;
     private ExecutorService executor = Executors.newFixedThreadPool(1);
     private Node lastNode = null;
+    private Node playerLoc = null;
     private volatile int moveNum = 0;
 
     public Spider(int row, int col, int id, Object lock, Node[][] maze) {
@@ -27,7 +30,7 @@ public class Spider extends Node{
         // set variables
         this.lock = lock;
         this.maze = maze;
-
+        //this.playerLoc = player;
         // start moving the spider
         // run()
         executor.submit(() -> {
@@ -134,7 +137,36 @@ public class Spider extends Node{
 
         //moveNum++;
     } // move()
+    private void search(int row, int col){
 
+        //traverses using Best First Traversator to find player
+        //Traversator t = new BestFirstTraversator(playerLoc);
 
+        //traverses using Depth Limited DFS Traversator to find player at a given limit
+        DepthLimitedDFSTraversator t = new DepthLimitedDFSTraversator(10,playerLoc);
+
+        //transverse from node 0 0 //can change 0 0 to sprites location to search from their location
+        t.traverse(maze, maze[row][col]);
+
+        // get the next node to move to
+//        nextMove = t.getNextNode();
+//
+//        // flag as having a next move
+//        if(nextMove != null){
+//            hasNextMove = true;
+//        } else {
+//            hasNextMove = false;
+//        }
+
+    }
+
+    public void updatePath(int x, int y) throws InterruptedException {
+		if (maze[this.row][this.col].getNodeType() != NodeType.PlayerNode) {
+			maze[this.row][this.col].setNodeType(NodeType.WalkableNode);
+			maze[x][y].setNodeType(NodeType.SpiderNode);
+			this.setRow(x);
+			this.setCol(y);
+		}
+	}
 
 }
