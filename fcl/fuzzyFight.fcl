@@ -1,0 +1,29 @@
+FUNCTION_BLOCK fight	// Block definition (there may be more than one block per file)
+
+VAR_INPUT				// Define input variables
+	health : REAL;
+	weapon : REAL;
+	armor : REAL;
+END_VAR
+
+VAR_OUTPUT				// Define output variable
+	annihilation : REAL;
+END_VAR
+
+FUZZIFY health
+	TERM poor := (0, 1) (25, 0);
+	TERM good := (30, 0) (45,1) (60,1) (75,0);
+	TERM excellent := (75, 0) (90, 1);
+END_FUZZIFY
+
+FUZZIFY weapon
+	TERM poor := (0, 1) (25, 0);
+	TERM good := (30, 0) (45,1) (60,1) (75,0);
+	TERM excellent := (75, 0) (90, 1);
+END_FUZZIFY
+
+FUZZIFY armor			
+	TERM poor := (0, 1) (25, 0);
+	TERM good := (30, 0) (45,1) (60,1) (75,0);
+	TERM excellent := (75, 0) (90, 1);
+END_FUZZIFY
