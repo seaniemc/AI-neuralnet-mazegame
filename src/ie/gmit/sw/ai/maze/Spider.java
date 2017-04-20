@@ -1,16 +1,16 @@
 package ie.gmit.sw.ai.maze;
 
-import ie.gmit.sw.ai.searchAlgos.DepthLimitedDFSTraversator;
+import ie.gmit.sw.ai.searchAlgos.AStarTraversator;
 import ie.gmit.sw.ai.searchAlgos.Node;
-
-import java.util.*;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import ie.gmit.sw.ai.maze.Warrior;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.Random;
 
 /**
  * Created by Sean on 19/04/2017.
  */
-public class Spider extends Node {
+public class Spider extends Sprite implements Runnable {
 
     private int id;
     private int strength;
@@ -19,7 +19,7 @@ public class Spider extends Node {
     private int algorithm;
     private Thread instance;
     private Node[][] maze;
-    private Player player;
+    private Warrior player;
     private boolean run;
     private int playerRowTemp;
     private int playerColTemp;
@@ -29,7 +29,7 @@ public class Spider extends Node {
     private AStarTraversator traverse;
     private LinkedList<Node> nodeListPath;
 
-    public Enemy() {
+    public Spider() {
         super();
         setStrength(0);
         setDifficulty(0);
@@ -37,7 +37,7 @@ public class Spider extends Node {
         setAlgorithm(0);
     }
 
-    public Enemy(int id, int health, int armor, int strength, int difficulty, boolean boss) {
+    public Spider(int id, int health, int armor, int strength, int difficulty, boolean boss) {
         super(health, armor);
         setId(id);
         setStrength(strength);
@@ -270,7 +270,8 @@ public class Spider extends Node {
         }
     }
 
-    public int getId() {
+    public int getId()
+    {
         return id;
     }
 

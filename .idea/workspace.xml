@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a7dfdb3-c225-4615-8d90-29595be7a26f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/ai/Maze.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/ai/Sprite.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/ai/maze/NodeType.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/ai/maze/Node.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/Node.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/ai/maze/Sprite.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/ai/maze/Warrior.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/ai/GameRunner.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/ai/GameRunner.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/ai/maze/Spider.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/ai/maze/Spider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/AStarTraversator.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/AStarTraversator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/DepthLimitedDFSTraversator.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/DepthLimitedDFSTraversator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/RandomWalk.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/RandomWalk.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/RecursiveDFSTraversator.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/RecursiveDFSTraversator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/Traversator.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/Traversator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/TraversatorStats.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/TraversatorStats.java" />
     </list>
     <ignored path="AI-neuralnet-mazegame.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,8 +63,35 @@
       <file leaf-file-name="Spider.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/maze/Spider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5704">
-              <caret line="415" column="1" selection-start-line="415" selection-start-column="1" selection-end-line="415" selection-end-column="1" />
+            <state relative-caret-position="-1697">
+              <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#10430#10431#0" expanded="true" />
+                <element signature="e#10455#10456#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Warrior.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/maze/Warrior.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="5" column="20" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="20" />
+              <folding>
+                <element signature="e#380#381#0" expanded="true" />
+                <element signature="e#411#412#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sprite.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/maze/Sprite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -99,16 +117,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/GameView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-910">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TraversatorStats.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/TraversatorStats.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -124,16 +132,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
               <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameRunner.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/GameRunner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-118">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -162,6 +160,8 @@
         <option value="$PROJECT_DIR$/src/ie/gmit/sw/ai/maze/Node.java" />
         <option value="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/Node.java" />
         <option value="$PROJECT_DIR$/src/ie/gmit/sw/ai/searchAlgos/TraversatorStats.java" />
+        <option value="$PROJECT_DIR$/src/ie/gmit/sw/ai/maze/Sprite.java" />
+        <option value="$PROJECT_DIR$/src/ie/gmit/sw/ai/maze/Warrior.java" />
         <option value="$PROJECT_DIR$/src/ie/gmit/sw/ai/maze/Spider.java" />
       </list>
     </option>
@@ -762,12 +762,12 @@
       <updated>1492597833019</updated>
       <workItem from="1492597836361" duration="493000" />
       <workItem from="1492598367466" duration="3112000" />
-      <workItem from="1492684522195" duration="2635000" />
+      <workItem from="1492684522195" duration="3535000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6240000" />
+    <option name="totallyTimeSpent" value="7140000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-1032" width="1296" height="1000" extended-state="6" />
@@ -850,7 +850,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#10430#10431#0" expanded="true" />
+            <element signature="e#10455#10456#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1014,11 +1018,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/maze/Sprite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/maze/Warrior.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="20" />
+          <folding>
+            <element signature="e#380#381#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ai/maze/Spider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5704">
-          <caret line="415" column="1" selection-start-line="415" selection-start-column="1" selection-end-line="415" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="-1697">
+          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#10430#10431#0" expanded="true" />
+            <element signature="e#10455#10456#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
