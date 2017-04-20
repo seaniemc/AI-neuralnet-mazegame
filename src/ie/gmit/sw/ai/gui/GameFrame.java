@@ -393,7 +393,7 @@ public class GameFrame implements KeyListener {
 			case 2:
 				return new BruteForceTraversator(true);
 			case 3:
-				return new BestFirstTraversator(game.getModel().getGoalNode());
+				//return new BestFirstTraversator(game.getModel().getGoalNode());
 			case 4:
 				//return new BasicHillClimbingTraversator(game.getModel().getGoalNode());
 			case 5:

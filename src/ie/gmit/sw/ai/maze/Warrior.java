@@ -1,10 +1,13 @@
 package ie.gmit.sw.ai.maze;
 
+import ie.gmit.sw.ai.searchAlgos.Node;
+
 /**
  * Created by Sean on 20/04/2017.
  */
 public class Warrior extends Sprite{
     private int score;
+        private Node current;
         private int stepsToExit;
         private int steps;
         private int special;
@@ -12,6 +15,7 @@ public class Warrior extends Sprite{
         private int weaponStrength;
         private int searchCount;
         private boolean gameOver;
+
 
         public Warrior() {
             super();
@@ -43,6 +47,10 @@ public class Warrior extends Sprite{
 
         public void setSteps(int steps) {
             this.steps = steps;
+        }
+
+        public Node getPosition(){
+            return this.current;
         }
 
         public int getSpecial() {

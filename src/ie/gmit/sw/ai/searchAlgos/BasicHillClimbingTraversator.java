@@ -1,6 +1,6 @@
 package ie.gmit.sw.ai.searchAlgos;
 
-/**  
+/**
 * BasicHillClimbingTraversator.java - The hill climbing algorithm class, used for traversing the maze to locate the goal node
 * @author John Walsh
 * @version 1.0 
@@ -51,4 +51,6 @@ public class BasicHillClimbingTraversator extends Utility implements Traversator
 			next = null;
 		}
 	}
+
+
 }

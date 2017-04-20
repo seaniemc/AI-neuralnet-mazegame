@@ -19,7 +19,8 @@ END_FUZZIFY
 FUZZIFY weapon
 	TERM damaged := (0, 1) (25, 0);
 	TERM sharp := (30, 0) (45,1) (60,1) (75,0);
-	TERM deadly := (75, 0) (90, 1);
+	TERM deadly
+	 := (75, 0) (90, 1);
 END_FUZZIFY
 
 FUZZIFY armor

@@ -1,6 +1,7 @@
 package ie.gmit.sw.ai.searchAlgos;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.PriorityQueue;
 public class AStarTraversator  extends Utility implements Traversator{
 	private Node goal;
 	private Node pathGoal;
@@ -82,6 +83,8 @@ public class AStarTraversator  extends Utility implements Traversator{
 			}
 		}
 	}
+
+
 
 	public int getStepsToExit() {
 		return stepsToExit;

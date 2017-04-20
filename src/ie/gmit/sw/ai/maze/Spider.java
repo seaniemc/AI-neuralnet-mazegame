@@ -25,6 +25,7 @@ public class Spider extends Sprite implements Runnable {
     private int playerColTemp;
     private int minUpdateTime;
     private int maxUpdateTime;
+    private Node current;
     private Node pathGoal;
     private AStarTraversator traverse;
     private LinkedList<Node> nodeListPath;
