@@ -40,6 +40,25 @@ The prize at the end of the arduous journey.<br>
 
 **BruteForce Search:** is a very general problem-solving technique that consists of systematically enumerating all possible candidates for the solution and checking whether each candidate satisfies the problem's statement.
 
+**Fuzzy Logic:**
+The game uses Fuzzy logic to decide if a player wins a battle with the spider enemys. When the warrior encounters a spider the game uses 
+fuzzy logic to decide if the player or the spider wins the battle. 
+```
+VAR_INPUT				// Define input variables
+	health : REAL;
+	weapon : REAL;
+	armor : REAL;
+END_VAR
+```
+The program uses the variables listed above to decide if the player is strong enough, or if the spider wins the day.
+
+```
+RULE 1 : IF health IS poor AND armor IS poor THEN annihilation IS bad;
+```
+If the player conditions are poor then the game is over. 
+
+
+
 
 
 
