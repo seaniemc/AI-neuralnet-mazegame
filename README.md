@@ -59,10 +59,13 @@ If the player conditions are poor then the game is over.
 
 **Game Modes**
 
-The game has 3 modes.
+The game has 3 modes.  
+
 + Easy: Has 35 normal spiders and 3 Hunting Spiders and Warrior has full health.
-+ Medium: Has 50 normal spiders 5 hunting spiders.
-+ Hard: Has 60 normal spiders and 10 hunting. 
++ Medium: Has 50 normal spiders 5 hunting spiders. Warrior has full health.
++ Hard: Has 60 normal spiders and 10 hunting. Warrior has full health. 
+
+The enemys health is randomly generated and the paramters for the values change depending on the difficulty selected by the user.  
 All hunting spiders use the Astar Algorithm 
 
 
