@@ -24,13 +24,13 @@ public class BruteForceTraversator extends Utility implements Traversator {
 			node = queue.poll();
 			node.setVisited(true);
 			visitCount++;
-			
+
 			if (node.isGoalNode() && node.nodeType != 'P'){
 		        time = System.currentTimeMillis() - time; //Stop the clock
 		        TraversatorStats.printStats(node, time, visitCount, false);
 				break;
 			}
-			
+
 			// Sleep for x amount of seconds
 			//sleep(1);
 			

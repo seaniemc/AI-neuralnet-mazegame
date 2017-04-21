@@ -5,6 +5,7 @@ package ie.gmit.sw.ai.maze;
  */import net.sourceforge.jFuzzyLogic.FIS;
 import net.sourceforge.jFuzzyLogic.FunctionBlock;
 import net.sourceforge.jFuzzyLogic.rule.Variable;
+
 public class BattleLogic {
     public BattleLogic(){
 
