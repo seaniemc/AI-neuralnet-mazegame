@@ -70,7 +70,8 @@ All hunting spiders use the Astar Algorithm.
 
 **Game Clues**
 
-The game allows users to collect and use clues, to speed up the search for the goal. As the game is started it randomly selects one of the algorithims stated above.
+The game allows users to collect and use clues, to speed up the search for the goal. As the game is started it randomly selects one of the algorithms stated above.<br>
+![Icon](https://cloud.githubusercontent.com/assets/9398358/25298364/07ff3afe-26ec-11e7-8662-d4ad025a2c27.png)
 
 
 
