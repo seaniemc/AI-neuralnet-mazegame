@@ -11,7 +11,7 @@
 ****
 
 **Maze Game**
-As part of our fourth year module Artificial Intelligence we were tasked with controlling a maze game's characters using Fuzzy Logic and Neural Networks. The game itself is a maze game where you are a Spartan warrior and have to get to a goal node randomly generated on the maze. Also in the maze are two types of spiders. the red spiders are controlled with out and Fuzzy Logic but the black spiders uses the A* search algorithm to hunt you down and try annihilate your character. We also have used other search algorithms to help find your way to the winning pint at the end of the game. 
+As part of our fourth year module Artificial Intelligence we were tasked with controlling a maze game's characters using Fuzzy Logic and Neural Networks. The game itself is a maze game where you are a Spartan warrior and have to get to a goal node randomly generated on the maze. Also in the maze are two types of spiders. The red spiders move in random directions around the maze but the black spiders uses the A* search algorithm to hunt you down and try annihilate your character all interactions between the the Warrior and the spider are decided by Fuzzy Logic. We also have used other search algorithms to help find your way to the winning pint at the end of the game. 
 
 **Main Character**
 ![Spartan Warrior](https://cloud.githubusercontent.com/assets/8806515/25294893/19178f34-26d9-11e7-9d17-25e07479eeee.png)<br>
@@ -66,7 +66,11 @@ The game has 3 modes.
 + Hard: Has 60 normal spiders and 10 hunting. Warrior has full health. 
 
 The enemys health is randomly generated and the paramters for the values change depending on the difficulty selected by the user.  
-All hunting spiders use the Astar Algorithm 
+All hunting spiders use the Astar Algorithm. 
+
+**Game Clues**
+
+The game allows users to collect and use clues, to speed up the search for the goal. As the game is started it randomly selects one of the algorithims stated above.
 
 
 
