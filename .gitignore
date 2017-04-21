@@ -37,4 +37,4 @@ resources/templates.list
 resources/gitignore/*
 build/
 build.properties
-junit*.properties
+
