@@ -57,6 +57,14 @@ RULE 1 : IF health IS poor AND armor IS poor THEN annihilation IS bad;
 ```
 If the player conditions are poor then the game is over. 
 
+**Game Modes**
+
+The game has 3 modes.
++ Easy: Has 35 normal spiders and 3 Hunting Spiders and Warrior has full health.
++ Medium: Has 50 normal spiders 5 hunting spiders.
++ Hard: Has 60 normal spiders and 10 hunting. 
+All hunting spiders use the Astar Algorithm 
+
 
 
 
