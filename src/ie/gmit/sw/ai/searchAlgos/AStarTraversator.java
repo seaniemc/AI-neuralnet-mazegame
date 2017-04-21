@@ -37,7 +37,8 @@ public class AStarTraversator  extends Utility implements Traversator{
 		long time = System.currentTimeMillis();
 		int visitCount = 0;
 
-		PriorityQueue<Node> open = new PriorityQueue<Node>(20, (Node current, Node next)-> (current.getPathCost() + current.getHeuristic(goal)) - (next.getPathCost() + next.getHeuristic(goal)));
+		PriorityQueue<Node> open = new PriorityQueue<Node>(20, (Node current, Node next)-> (current.getPathCost()
+				+ current.getHeuristic(goal)) - (next.getPathCost() + next.getHeuristic(goal)));
 		java.util.List<Node> closed = new ArrayList<Node>();
 
 		open.offer(node);
@@ -55,7 +56,9 @@ public class AStarTraversator  extends Utility implements Traversator{
 				setFoundGoal(true);
 				setPathGoal(node);
 				break;
-			}else if(node.isGoalNode() && node.getNodeType() == 'P' && enemySearch){
+			}else
+
+			if(node.isGoalNode() && node.getNodeType() == 'P' && enemySearch){
 				setFoundGoal(true);
 				setPathGoal(node);
 				break;
@@ -83,8 +86,6 @@ public class AStarTraversator  extends Utility implements Traversator{
 			}
 		}
 	}
-
-
 
 	public int getStepsToExit() {
 		return stepsToExit;

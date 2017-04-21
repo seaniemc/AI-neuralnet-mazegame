@@ -25,7 +25,6 @@ public class Spider extends Sprite implements Runnable {
     private int playerColTemp;
     private int minUpdateTime;
     private int maxUpdateTime;
-    private Node current;
     private Node pathGoal;
     private AStarTraversator traverse;
     private LinkedList<Node> nodeListPath;
@@ -105,14 +104,12 @@ public class Spider extends Sprite implements Runnable {
                     getMaze()[getRowPos()][getColPos()].setEnemyID(0);
                     getPlayer().setGameOver(true);
                     getMaze()[r][c].setNodeType('L');
-                    //PlaySound.play("res/lose_game.wav");
                 }else{
                     getMaze()[getRowPos()][getColPos()].setNodeType('D');
                     if(this.isBoss())
                         getMaze()[getRowPos()][getColPos()].setNodeType('L');
                     getMaze()[getRowPos()][getColPos()].setEnemyID(0);
                     this.setHealth(0);
-                    //PlaySound.play("res/win_fight.wav");
                 }
                 return enemyWon;
             case 'T':
@@ -175,7 +172,7 @@ public class Spider extends Sprite implements Runnable {
     private void aStarFindPlayer() {
         // If the player is 60 steps or lower from the maze exit goal then search and destroy the player!
         // Keep the enemy moving while the player is 60 steps and above away from the maze's exit
-        if(getPlayer().getStepsToExit() > 60 || getPlayer().getStepsToExit() <= 0){
+        if(getPlayer().getStepsToExit() > 100 || getPlayer().getStepsToExit() <= 0){
             setMinUpdateTime(600);
             setMaxUpdateTime(750);
             checkMove(new Random().nextInt((3 - 0) + 1) + 0);
@@ -271,8 +268,7 @@ public class Spider extends Sprite implements Runnable {
         }
     }
 
-    public int getId()
-    {
+    public int getId() {
         return id;
     }
 

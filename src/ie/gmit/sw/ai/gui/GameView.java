@@ -87,7 +87,7 @@ public class GameView extends JPanel implements ActionListener{
 						g2.fillRect(x1, y1, size, size);
 					}
 					if(ch == 'F'){
-						g2.setColor(Color.MAGENTA);
+						g2.setColor(Color.BLACK);
 						g2.fillRect(x1, y1, size, size);
 					}
 					if(ch == 'D'){
@@ -95,7 +95,7 @@ public class GameView extends JPanel implements ActionListener{
 						g2.fillRect(x1, y1, size, size);
 					}
 					if (row == currentRow && col == currentCol){
-						g2.setColor(Color.ORANGE);
+						g2.setColor(Color.MAGENTA);
 						g2.fillRect(x1, y1, size, size);
 					}
 				}else{
@@ -221,8 +221,8 @@ public class GameView extends JPanel implements ActionListener{
 			images[10] = ImageIO.read(new java.io.File("res/wayout.png"));
 			images[11] = ImageIO.read(new java.io.File("res/health.png"));
 			images[12] = ImageIO.read(new java.io.File("res/armor.png"));
-			images[13] = ImageIO.read(new java.io.File("res/goal.png"));
-			images[14] = ImageIO.read(new java.io.File("res/win.png"));
+			images[13] = ImageIO.read(new java.io.File("res/pub.png"));
+			images[14] = ImageIO.read(new java.io.File("res/theGoal.jpg"));
 			images[15] = ImageIO.read(new java.io.File("res/lose.png"));
 			images[16] = ImageIO.read(new java.io.File("res/spartan_1.png"));
 			images[17] = ImageIO.read(new java.io.File("res/bomb.png"));
