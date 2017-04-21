@@ -15,22 +15,22 @@ As part of our fourth year module Artificial Intelligence we were tasked with co
 
 **Main Character**
 ![Spartan Warrior](https://cloud.githubusercontent.com/assets/8806515/25294893/19178f34-26d9-11e7-9d17-25e07479eeee.png)<br>
-Our Main Hero is a Spartan Warrior.
+Our Main Hero is a Spartan Warrior.<br>
 
 **Black Hunter Spider**
 ![Hunts down the Spartan warrior](https://cloud.githubusercontent.com/assets/8806515/25294936/5840fca4-26d9-11e7-9388-eff64310e7ec.png)<br>
-This is our black hunter spider who uses the A*(A-star) algorithm to hunt down the Spartan warrior before he reaches his destination.
+This is our black hunter spider who uses the A*(A-star) algorithm to hunt down the Spartan warrior before he reaches his destination.<br>
 **Red Spider**
 ![Red Threaded Spider](https://cloud.githubusercontent.com/assets/8806515/25295007/a91e889e-26d9-11e7-99ef-0f7151aa9b57.png)<br>
-The Red spiders are threaded and randomly move around the map so the Spartan must avoid them.
+The Red spiders are threaded and randomly move around the map so the Spartan must avoid them.<br>
 
 **Goal node**
 ![Where the spartan wants to get to for his reward](https://cloud.githubusercontent.com/assets/8806515/25295055/de178172-26d9-11e7-8fd0-c2a24e89b525.png)<br>
-The location which the spartan warrior is trying to get to.
+The location which the spartan warrior is trying to get to.<br>
 
 **Winners Prize**
 ![Spartans reward](https://cloud.githubusercontent.com/assets/8806515/25295104/187decac-26da-11e7-97ce-1058a5cd3c58.jpg)<br>
-The prize at the end of the arduous journey.
+The prize at the end of the arduous journey.<br>
 
 **Algorithms Used**
 
