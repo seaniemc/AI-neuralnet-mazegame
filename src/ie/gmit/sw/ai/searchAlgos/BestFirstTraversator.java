@@ -5,7 +5,7 @@ import ie.gmit.sw.ai.maze.Spider;
 import java.util.*;
 
 
-public class BestFirstTraversator extends Utility implements  Hunterable {
+public class BestFirstTraversator extends Utility {
 
 	
 	private Node goal;
@@ -52,7 +52,7 @@ public class BestFirstTraversator extends Utility implements  Hunterable {
 //	}
 
 
-	@Override
+
 	public Node hunt(Node[][] maze, Node node, Spider spider) {
 		LinkedList<Node> queue = new LinkedList<Node>();
 		queue.addFirst(node);
