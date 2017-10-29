@@ -5,7 +5,7 @@ import java.awt.*;
 
 /**
  * Node.java - The node class is responsible for keeping track of individual nodes in the maze
- * @author John Walsh
+ * @author Dara Starr
  * @version 1.0
  */
 public class Node {
